@@ -24,14 +24,14 @@ Run the web application:
 
 bash
 python app.py
-Access the web interface: Open your browser and go to http://localhost:5000.
+Access the web interface: Open your browser and go to http://127.0.0.1:5000 .
 
 Input the necessary parameters: Use the web form to input parameters such as Year,	average_rain_fall_mm_per_year,	pesticides_tonnes,	avg_temp,	Area,	Item.
 
 View the predictions: The application will display the predicted crop yield based on the provided input.
 
 Project Structure
-data/: got the datasets used for training and testing from kaggle.
+data : got the datasets for training and testing from kaggle.
 
 models/: the trained machine learning models.
 
