@@ -10,39 +10,58 @@ Welcome to the Crop Yield Prediction project! This project leverages supervised 
 - **Machine Learning**: Utilizes various supervised learning algorithms to predict crop yield.
 - **Web Interface**: Built with Bootstrap for a responsive and user-friendly experience.
 
-## Installation
+## Dependencies
+Python
 
-1. Clone the repository:
-   ```bash
-   git clone (https://github.com/Bharatdungriyal)
-   Crop_Yield_prediction_PJ_ML
-2. Install the required dependencies:
+NumPy
+
+Pandas
+
+Seaborn
+
+Matplotlib
+
+scikit-learn
+
+Flask
+
+Bootstrap
+
+## Installation
+Clone the repository:
+
+bash
+git clone https://github.com/Bharatdungriyal/Crop_Yield_prediction_PJ_ML
+Install the required dependencies:
+
 bash
 pip install -r requirements.txt
 Usage
 Run the web application:
+
 bash
 python app.py
-Access the web interface: Open your browser and go to http://127.0.0.1:5000 .
+Access the web interface: Open your browser and go to http://127.0.0.1:5000.
 
-Input the necessary parameters: Use the web form to input parameters such as Year,	average_rain_fall_mm_per_year,	pesticides_tonnes,	avg_temp,	Area,	Item.
+Input the necessary parameters: Use the web form to input parameters such as Year, average_rain_fall_mm_per_year, pesticides_tonnes, avg_temp, Area, and Item.
 
 View the predictions: The application will display the predicted crop yield based on the provided input.
 
 Project Structure
-data : got the datasets for training and testing from kaggle.
+data/: Datasets for training and testing obtained from Kaggle.
 
-models/: the trained machine learning models.
+models/: Trained machine learning models.
 
 notebooks/: Jupyter notebooks for exploratory data analysis and model training.
 
-app/: The Flask application for the web interface, using flask docs
+app/: The Flask application for the web interface.
 
-static/:The static files (CSS, JS, and images) for the web interface are created with the help of their documentation files and Bootstrap .
+static/: Static files (CSS, JS, and images) for the web interface created using Bootstrap.
 
-templates/: Contains HTML templates for the web interface.
+templates/: HTML templates for the web interface.
 
 Data Processing
+Libraries
 python
 import numpy as np
 import pandas as pd
@@ -50,16 +69,36 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
-Encoding: Categorical variables are converted to numerical using OneHotEncoder.
+Encoding
+Categorical variables are converted to numerical values using OneHotEncoder.
 
-Scaling: Numerical features are standardized using StandardScaler.
+Scaling
+Numerical features are standardized using StandardScaler.
 
 Model Training
-The models are tested using various supervised learning algorithms such as LinearRegression(),
-Lasso(),
-Ridge(),
-KNeighborsRegressor(),
-DecisionTreeRegressor(). 
-The performance of each model is evaluated using metrics like Mean Squared Error (MSE) and R-squared.
-Model Training
-The models are trained using the Decision Tree Regressor, which showed the best performance based on Mean Squared Error (MSE) and R-squared metrics.
+Libraries
+python
+from sklearn.linear_model import LinearRegression, Lasso, Ridge
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_squared_error, r2_score
+Models Tested
+The following supervised learning algorithms are tested:
+
+LinearRegression()
+
+Lasso()
+
+Ridge()
+
+KNeighborsRegressor()
+
+DecisionTreeRegressor()
+
+Evaluation Metrics
+Mean Squared Error (MSE)
+
+R-squared
+
+Selected Model
+The models are trained using the DecisionTreeRegressor, which showed the best performance based on MSE and R-squared metrics.
