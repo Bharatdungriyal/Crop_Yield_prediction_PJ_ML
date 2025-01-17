@@ -60,22 +60,39 @@ static/: Static files (CSS, JS, and images) for the web interface created using 
 
 templates/: HTML templates for the web interface.
 
-Data Processing
+## Data Processing
 Libraries
-python
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.compose import ColumnTransformer
+Python: The programming language used for data processing and model training.
+
+NumPy: A library for numerical operations on large, multi-dimensional arrays and matrices.
+
+Pandas: A data manipulation and analysis library providing data structures like DataFrames.
+
+Seaborn: A visualization library built on Matplotlib, providing a high-level interface for attractive statistical graphics.
+
+Matplotlib: A plotting library for creating static, animated, and interactive visualizations.
+
+scikit-learn.preprocessing: A module for preprocessing data, including scaling and encoding features.
+
+OneHotEncoder: Converts categorical variables to numerical values using one-hot encoding.
+
+StandardScaler: Standardizes numerical features by removing the mean and scaling to unit variance.
+
+sklearn.compose
+
+ColumnTransformer: Applies different preprocessing steps to different columns of a dataset.
+
 Encoding
 Categorical variables are converted to numerical values using OneHotEncoder.
 
 Scaling
 Numerical features are standardized using StandardScaler.
 
-Model Training
+
+
+
+
+## Model Training
 Libraries
 python
 from sklearn.linear_model import LinearRegression, Lasso, Ridge
@@ -84,7 +101,6 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 Models Tested
 The following supervised learning algorithms are tested:
-
 LinearRegression()
 
 Lasso()
