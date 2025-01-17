@@ -14,14 +14,13 @@ Welcome to the Crop Yield Prediction project! This project leverages supervised 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/crop-yield-prediction.git
-   cd crop-yield-prediction
+   git clone (https://github.com/Bharatdungriyal)
+   Crop_Yield_prediction_PJ_ML
 2. Install the required dependencies:
 bash
 pip install -r requirements.txt
 Usage
 Run the web application:
-
 bash
 python app.py
 Access the web interface: Open your browser and go to http://127.0.0.1:5000 .
@@ -39,7 +38,7 @@ notebooks/: Jupyter notebooks for exploratory data analysis and model training.
 
 app/: The Flask application for the web interface, using flask docs
 
-static/: Contains static files (CSS, JS, images) for the web interface.
+static/:The static files (CSS, JS, and images) for the web interface are created with the help of their documentation files and Bootstrap .
 
 templates/: Contains HTML templates for the web interface.
 
